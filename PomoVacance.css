@@ -5,5 +5,11 @@ nav{
 	background-color: #0064dc;
 	padding:0 ;
 	font-size: 0;
-
+}
+nav ul{
+	padding: 0px;
+	margin:0px;
+	list-style-type: none;
+	background-color: #333333;
+	text-align: center;
 }
