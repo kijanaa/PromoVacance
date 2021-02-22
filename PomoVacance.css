@@ -1,4 +1,4 @@
-*{
+/*{
 	background-color: 0;
 }
 nav{
@@ -13,3 +13,87 @@ nav ul{
 	background-color: #333333;
 	text-align: center;
 }
+ul{
+	list-style-type: none;	
+}
+nav li{
+	display: inline-block;
+	margin : 0px;
+	padding: 0px;
+	width: 100px;
+	height: 40px;
+	border-right: 1px solid #CCCCCC;
+	text-align: center;
+	line-height: 40px;
+}
+nav li a{
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+nav li :hover{
+	background-color: #338888;
+
+}
+*/
+
+*
+{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	background-image: url(image.jpg);
+	background-size: cover;
+	background-size: center;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.menu-bar
+{
+	background: rgb(100,10,100);	
+	text-align: center;
+}
+.menu-bar 
+{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.menu-bar li /* pour mettre le menu  sur une ligne en large*/
+{
+	width: 120px;
+	margin: 15px;
+	padding: 10px;
+}
+.menu-bar li
+{
+	text-decoration: none;
+	color: #fff;
+}
+.active, .menu-bar li:hover /*pour que cela s'eclaire quand la souris passe dessus*/
+{
+	background: #2bab0d;
+	border-radius: 3px;
+}
+.menu-bar .fa
+{
+	margin-right: 8px;
+}
+.sub-menu-1
+{
+	display: none;
+}
+.menu-bar li:hover .sub-menu-1
+{
+display: block;
+position: absolute;
+background: rgb(0,100,0);
+margin-top: 15px;
+margin-left: 15px;
+}
+
+
+
+
