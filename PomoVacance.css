@@ -61,18 +61,18 @@ body
 	list-style: none;
 	color: #fff;
 }
-.menu-bar li /* pour mettre le menu  sur une ligne en large*/
+.menu-bar ul li /* pour mettre le menu  sur une ligne en large*/
 {
 	width: 120px;
 	margin: 15px;
 	padding: 10px;
 }
-.menu-bar li
+.menu-bar ul li a
 {
 	text-decoration: none;
 	color: #fff;
 }
-.active, .menu-bar li:hover /*pour que cela s'eclaire quand la souris passe dessus*/
+.active, .menu-bar ul li:hover /*pour que cela s'eclaire quand la souris passe dessus*/
 {
 	background: #2bab0d;
 	border-radius: 3px;
@@ -85,14 +85,38 @@ body
 {
 	display: none;
 }
-.menu-bar li:hover .sub-menu-1
+.menu-bar li:hover .sub-menu-1 /* pour bien affich les sous menu*/
 {
 display: block;
 position: absolute;
 background: rgb(0,100,0);
 margin-top: 15px;
-margin-left: 15px;
+margin-left: -15px;
 }
+.menu-bar li:hover .sub-menu-1 ul
+{
+	display: block;
+	margin: 10px;
+}
+.menu-bar li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menu-bar li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+}
+.menu-bar li:hover .sub-menu-1 ul li a:hover
+{
+	color: #581845;
+}
+
+
 
 
 
